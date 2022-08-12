@@ -112,6 +112,7 @@ public class Constante {
 	public static final String STR_ERRO_CRIAR_ARQUIVO = "Erro ao criar o arquivo:\n%s\n%s";
 	public static final String STR_ERRO_ACESSAR_ARQUIVO = "Erro ao acessar o arquivo:\n%s\n%s";
 	public static final String STR_PROGRAMA_JA_ABERTO = "Este programa já está aberto.";
+	public static final String STR_RECURSO_NAO_ENCONTRADO = "Recurso não encontrado: %s";
 	
 	public static final String STR_ERRO_GRAVAR_FIREBASE = "Erro ao gravar no Firebase: %s";
 	public static final String STR_ENVIANDO_DADOS_MON = "Enviando dados de monitoramento para %s.";

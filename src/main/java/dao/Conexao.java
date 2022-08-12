@@ -1,5 +1,10 @@
 package dao;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.file.StandardCopyOption;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -8,16 +13,38 @@ import java.sql.Statement;
 import firebird.FirebirdConexao;
 import geral.Config;
 import geral.Constante;
+import geral.Dialogo;
 import geral.Util;
 import modelo.BancoDados;
 
 public abstract class Conexao {
 	
-	public static Conexao getConexao() {
+	private static final String nomeBancoDados = "GBR.fdb";
+	
+	private static String getEnderecoBancoDados() {
+		return Util.getAppAbsolutePath() + nomeBancoDados;
+	}
+	
+	private static void verificaBancoDados() throws Exception {
+		String enderecoBancoDados = getEnderecoBancoDados();
+		File f = new File(enderecoBancoDados);
+		if (!f.exists()) {
+			ClassLoader loader = Thread.currentThread().getContextClassLoader();
+			InputStream is = loader.getResourceAsStream(nomeBancoDados);
+		    if (is != null) {
+		    	File file = new File(enderecoBancoDados);
+		    	java.nio.file.Files.copy(is, file.toPath(), StandardCopyOption.REPLACE_EXISTING);
+		    } else
+		    	throw new Exception(String.format(Constante.STR_RECURSO_NAO_ENCONTRADO, nomeBancoDados));
+		}
+	}
+	
+	public static Conexao getConexao() throws Exception {
+		verificaBancoDados();
 		BancoDados bancoDados = new BancoDados();
 		bancoDados.setMaquina("localhost");
 		bancoDados.setPorta(30530);
-		bancoDados.setEndereco(Util.getAppAbsolutePath() + "GBR.fdb");
+		bancoDados.setEndereco(getEnderecoBancoDados());
 		bancoDados.setCaracteres("UTF8");
 		bancoDados.setUsuario(Config.getConexaoUsuario());
 		bancoDados.setSenha(Config.getConexaoSenha());
