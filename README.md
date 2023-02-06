@@ -14,5 +14,11 @@ curso de Análise e Desenvolvimento de Sistemas do Instituto Federal de Rondôni
 - [x] Replicação de para múltiplos destinos.
 - [x] Integração com aplicativo de monitoramento.
 
-### Tela principal
+### Capturas de tela
+
 ![Tela principal](etc/imagens/tela-principal.png)
+![Cadastro de bancos de dados](etc/imagens/cadastro-banco-dados.png)
+![Cadastro de pastas](etc/imagens/cadastro-pastas.png)
+![Cadastro de tarefa de backup](etc/imagens/cadastro-tarefa-backup.png)
+![Cadastro de tarefa de replicação](etc/imagens/cadastro-tarefa-replicacao.png)
+![Sobre o sistema](etc/imagens/sobre.png)
