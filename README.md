@@ -12,6 +12,7 @@ curso de Análise e Desenvolvimento de Sistemas do Instituto Federal de Rondôni
 - [x] Backup de múltiplos bancos de dados.
 - [x] Replicação de múltiplos bancos de dados.
 - [x] Replicação de para múltiplos destinos.
+- [x] Monitoramento por aplicativo Android.
 
 ### Tela principal
 ![Tela principal](etc/imagens/tela-principal.png)
