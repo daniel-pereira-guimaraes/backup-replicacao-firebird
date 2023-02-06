@@ -11,4 +11,4 @@ curso de Análise e Desenvolvimento de Sistemas do Instituto Federal de Rondôni
 - [x] Replicação de dados (INSERT, UPDATE, DELETE).
 - [x] Backup de múltiplos bancos de dados.
 - [x] Replicação de múltiplos bancos de dados.
-- [x] Replicação de um banco de dados para múltiplos destinos.
+- [x] Replicação de para múltiplos destinos.
