@@ -16,9 +16,9 @@ curso de Análise e Desenvolvimento de Sistemas do Instituto Federal de Rondôni
 
 ### Capturas de tela
 
-![Tela principal](etc/imagens/tela-principal.png)
-![Cadastro de bancos de dados](etc/imagens/cadastro-banco-dados.png)
-![Cadastro de pastas](etc/imagens/cadastro-pastas.png)
-![Cadastro de tarefa de backup](etc/imagens/cadastro-tarefa-backup.png)
-![Cadastro de tarefa de replicação](etc/imagens/cadastro-tarefa-replicacao.png)
+<img src="etc/imagens/tela-principal.png" width="680px" alt="Tela principal">
+<img src="etc/imagens/cadastro-banco-dados.png" width="680px" alt="Cadastro de bancos de dados">
+<img src="etc/imagens/cadastro-pastas.png" width="680px" alt="Cadastro de pastas">
+<img src="etc/imagens/cadastro-tarefa-backup.png" width="680px" alt="Cadastro de tarefa de backup">
+<img src="etc/imagens/cadastro-tarefa-replicacao.png" width="680px" alt="Cadastro de tarefa de replicação">
 <img src="etc/imagens/sobre.png" width="400px" alt="Sobre o sistema" title="Sobre o sistema">
