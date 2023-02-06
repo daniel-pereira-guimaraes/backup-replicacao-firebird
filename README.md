@@ -21,4 +21,4 @@ curso de Análise e Desenvolvimento de Sistemas do Instituto Federal de Rondôni
 ![Cadastro de pastas](etc/imagens/cadastro-pastas.png)
 ![Cadastro de tarefa de backup](etc/imagens/cadastro-tarefa-backup.png)
 ![Cadastro de tarefa de replicação](etc/imagens/cadastro-tarefa-replicacao.png)
-![Sobre o sistema](etc/imagens/sobre.png)
+<img src="etc/imagens/sobre.png" width="400px" alt="Sobre o sistema" title="Sobre o sistema">
